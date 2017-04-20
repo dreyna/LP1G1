@@ -1,0 +1,115 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: Helvetica Neue; 
+}
+
+/*titulo*/
+
+div#titulo{
+	width:100%;
+	margin-top:100px;
+       
+}
+p#header{
+	text-align: center;
+	font-size: 4.5em;
+	color:#9a9a9a;
+}
+p#subheader{
+	text-align: center;
+	color:#cecece;
+	margin-top:20px;
+	font-size: 1.3em;
+}
+
+header{
+	margin:100px auto;
+	width:1200px;
+	height:230px;
+	background-color: red;
+}
+div.contenedor{
+	width: 200px;
+	height: 230px;
+	float:left;    /*posiciona una caja moviéndola todo
+                lo posible a la izquierda o derecha de su posición original*/
+	
+        -webkit-transition: height .4s;/*ransiciones CSS3 le permite 
+                                cambiar los valores de propiedad sin
+                                problemas (de un valor a otro)*/
+}
+div#uno{
+	background-color: rgb(208,101,6);
+}div#dos{
+	background-color: rgb(233,147,29);
+}
+
+div#tres{
+	background-color: rgb(22,145,180); /*define intencidad de 
+                                    color rojo verda azul*/
+}
+
+div#cuatro{
+	background-color: rgb(22,107,200);
+}
+
+div#cinco{
+	background-color: rgb(27,54,80);
+}
+
+div#seis{
+	background-color: rgb(21,40,100);
+}
+img.icon{
+	display: block;  /*display es la propiedad más importante para controlar estructuras. 
+                  Cada elemento tiene un valor de display por defecto dependiendo de qué tipo de elemento sea.
+                  El valor por defecto para la mayoría de los elementos es usualmente block (de bloque) o inline (en línea).
+                  Un elemento que es block es comunmente llamado elemento block-level. 
+                  Un elemento inline siempre es llamado elemento inline.        */
+	
+        margin:50px auto;    /*centrar el icono*/
+	background-color: rgba(180,255,255,.20);   /*color alredor de la imgn 20:blaanco*/
+	width:40px;    /*anchura*/
+	padding:20px;    /*ANCHURA DEL CIRCULO ENTRE  LA IMAGEN*/
+	-webkit-border-radius: 50%;
+	-webkit-box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+	-webkit-transition:box-shadow .4s;
+}
+p.texto{
+	font-size: 1.2em; /*tamaño letra*/
+	color:white;       /*COLOR DEL TEXTO*/
+	text-align: center;/*ALINICACION DEL TEXO*/
+	padding-top:10px;   /*alinea el texto mas abajo*/
+	opacity: .6;        /*transparencia de la letra*/
+	transition: padding-top  /*establece el relleno superior (espacio) de un elemento.*/
+}
+div#uno:hover {    /*Al pasar el cursor por encima de la imagen, esta
+                   aumenta su anchura y altura mediante una transición CSS.*/
+	height:200px;
+}
+
+div#dos:hover {
+	height:250px;
+}
+div#tres:hover {
+	height:290px;
+}
+div#cuatro:hover {
+	height:330px;
+}
+div#cinco:hover {
+	height:360px;
+}
+div#seis:hover {
+	height:400px;
+}
+div.contenedor:hover p.texto{ /*el texto se ancha*/
+	padding-top: 30px;
+	opacity: 1;
+}
+div.contenedor:hover img.icon{
+	-webkit-box-shadow:0px 0px 0px 0px rgba(255,255,255,.500);
+}
+
+
