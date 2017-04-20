@@ -1,0 +1,50 @@
+*{
+ 
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+body{
+    background-image: url("../imag/pia11.jpg")
+}
+
+.perfil {
+position: relative;
+overflow: hidden;
+width: 70%;
+margin: 10px auto 10px;
+border-radius: 8px;
+background: pink;
+text-align:center;
+}
+.perfil a {
+display: inline-block;
+width: 25%; 
+box-sizing: border-box;
+padding: 10px 5px;
+color: black;
+text-decoration: none;
+}
+.JUEGO {
+position: absolute;
+bottom: 4px;
+left: -12.5%; 
+width: 12.5%; 
+height: 4px;
+background: #white;
+transition: 0.5s ease-in-out; 
+}
+.perfil a:nth-child(1):hover ~ .JUEGO {
+left: 6.25%; 
+}
+.perfil a:nth-child(2):hover ~ .JUEGO{
+}
+
+.perfil a:nth-child(3):hover ~ .JUEGO {
+left: 56.25%; 
+}
+.perfil a:nth-child(4):hover ~ .JUEGO{
+left: 81.5%;
+}
+
+
+
