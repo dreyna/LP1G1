@@ -1,10 +1,160 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 19/04/2017, 07:52:51 PM
-    Author     : UPEU
-*/
+@font-face{
+    font-family: "Helvetica";
+    src:url("fonts/fonts-Deyvis/HelveticaLTStd-Light.otf");
+}
 
+body{
+    margin: 0; 
+    background: gray;
+}
+nav ul li a{
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    background: #4e94ab;
+}
+#btn-menu{
+    display: none;
+}
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+/*    justify-content: center;*/
+}
+.menu li{
+    border-right: 1px solid #fff;
+}
+.menu li:hover{
+    background: rgba(0,0,0,0.3);
+}
+.menu ul a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width:768px){
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background: #4e94ab;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+}
+div a{
+    font-size: 32px;
+    font-family:"Helvetica"; 
+    color: gainsboro;
+}
+div{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-family:"Helvetica"; 
+    font-size: 57px;
+    color: darkgray;
+}
+h2{
+    font-family: "Helvetica";
+    font-size: 67px;
+    color: darkgrey;
+}
+.miForm{
+    background: url("../imagenes/IMG_Deyvis/2.jpg");
+    background-size: 100% 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-repeat: no-repeat;
+    color: white;
+}
+.miForm a{
+    /*background: #4e94ab;*/
+    border: 10px;
+}
+
+.lbl{
+    background: gray;
+    opacity: 0.7;
+    border: 0;
+}
+form{
+/*    background: gray;*/
+/*    opacity: 0.5;*/
+}
+input{
+    border-radius: 15px 15px 15px 15px;
+    padding-top: 15px;
+    margin-top: 10px;
+    color: white;
+    font-size: 100%;
+    text-align: center;
+}
+#miboton{
+    background: chartreuse;
+    opacity: 0.9;
+    border: 0;
+    cursor: pointer;
+}
+
+.slider{
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    
+    animation: cambio 15s infinite alternate;
+    animation-timing-function: ease;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+@keyframes cambio{
+    0%{margin-left:0;}
+    20%{margin-left:0;}
+    
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+    
+    50%{margin-left:-200%;}
+    70%{margin-left:-200%;}
+    
+    75%{margin-left:-300%;}
+    100%{margin-left:-300%;}
+}
