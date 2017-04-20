@@ -28,7 +28,7 @@ header label:hover{
     cursor: pointer;
     background: rgba(0,0,0,0.3);
 }
-.menu ul{
+.menu ul,.menu1 ul{
     margin: 0;
     list-style: none;
     padding: 0;
@@ -36,13 +36,13 @@ header label:hover{
     flex-direction: row;
 /*    justify-content: center;*/
 }
-.menu li{
+.menu li,.menu1 li{
     border-right: 1px solid #fff;
 }
-.menu li:hover{
+.menu li,.menu1 li:hover{
     background: rgba(0,0,0,0.3);
 }
-.menu ul a{
+.menu ul a,.menu1 ul li a{
     display: block;
     padding: 15px 20px;
     color: #fff;
@@ -52,20 +52,20 @@ header label:hover{
     header label{
         display: block;
     }
-    .menu{
+    .menu, .menu1{
         position: absolute;
         background: #4e94ab;
         width: 70%;
         margin-left: -70%;
         transition: all 0.5s;
     }
-    .menu ul{
+    .menu ul, .menu1 ul{
         flex-direction: column;
     }
-    .menu li{
+    .menu li, .menu1 li{
         border-top: 1px solid #fff;
     }
-    #btn-menu:checked ~ .menu{
+    #btn-menu:checked ~ .menu, .menu1{
         margin: 0;
     }
 }
@@ -80,9 +80,19 @@ div{
 h1{
     text-align: center;
     font-family:"Helvetica"; 
-    font-size: 57px;
+    font-size: 77px;
     color: darkgray;
+    transition: opacity 1s, transform 1s;
+    transform: scale(1,1);
+    opacity: 1;
+    
+/*    text-shadow:0px 6px 6px white;*/
 }
+h1:hover{
+    transform: scale(1.1,1.1);
+    opacity: 0;
+}
+
 h2{
     font-family: "Helvetica";
     font-size: 67px;
@@ -95,10 +105,19 @@ h2{
     margin-right: 10%;
     background-repeat: no-repeat;
     color: white;
+    box-shadow: 0px 0px 10px 3px;
+    animation: parpadeo 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes parpadeo{
+    0%{box-shadow: 0px 0px 10px 3px white;}
+    50%{box-shadow: 0px 0px 50px 5px white;}
+    0%{box-shadow: 0px 0px 10px 3px white;}
 }
 .miForm a{
     /*background: #4e94ab;*/
     border: 10px;
+    
 }
 
 .lbl{
@@ -109,6 +128,8 @@ h2{
 form{
 /*    background: gray;*/
 /*    opacity: 0.5;*/
+
+
 }
 input{
     border-radius: 15px 15px 15px 15px;
