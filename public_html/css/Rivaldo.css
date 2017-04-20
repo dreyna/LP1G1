@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:cursive;
+       
+}
+.primdiv{
+    background: black;
+    position: fixed;
+    width: 100%;   
+    z-index: 2;
+}
+.primdiv ul {   
+    overflow: hidden;    
+}
+.primdiv li {
+    float: right;
+    margin: 0 5px;
+}
+.primdiv li a {    
+    font-size: 14px;
+    text-decoration: none;    
+    display: block;
+    padding: 1px;
+    background-color: black;
+    color: white;
+}
+.primdiv li a:hover{
+    color: rgba(0,250,0,0.5);
+    transition-duration: 0.5s;
+}
+.active {
+    background-color: #4CAF50;    
+}
+header{
+    width: 100%; 
+    position: fixed;
+    top: 24px;   
+    background: #2C2126;
+    color: #9B98AA;
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+    z-index: 2;
+    font-size: 15px;
+}
+#btn-menu{
+    display: none;
+}
+header label{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    transition-duration: 0.4s;    
+}
+.menuFixed{
+    position: fixed;
+}
+.menu ul{
+    background: #2C2126; 
+    display: flex;
+    list-style: none;   
+    
+}
+.menu ul ul{
+    display: none;    
+}
+.menu a{
+    font-weight: bold;
+    display: block;
+    color:#9B98AA;
+    padding: 25px 30px;
+    text-decoration: none;    
+}
+.menu a:hover{
+    color: rgba(0,250,0,0.5);
+    transition-duration: 0.3s;    
+}
+.menu a span{
+    margin-left: 10px;
+}
+.menu ul li:hover ul{
+    display: block;
+    position: absolute;     
+}
+.active {
+    background-color: #4CAF50;    
+}
+header{
+    width: 100%; 
+    position: fixed;
+    top: 24px;   
+    background: #2C2126;
+    color: #9B98AA;
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+    z-index: 2;
+    font-size: 15px;
+}
+
+header label{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    transition-duration: 0.4s;    
+}
+/*.menuFixed{
+    position: fixed;
+}*/
+.menu1 ul{
+    background: #2C2126; 
+    display: flex;
+    list-style: none;   
+    
+}
+.menu1 ul ul{
+    display: none;    
+}
+.menu1 a{
+    font-weight: bold;
+    display: block;
+    color:#9B98AA;
+    padding: 25px 30px;
+    text-decoration: none;    
+}
+.menu1 a:hover{
+    color: rgba(0,250,0,0.5);
+    transition-duration: 0.3s;    
+}
+.menu1 a span{
+    margin-left: 10px;
+}
+.menu1 ul li:hover ul{
+    display: block;
+    position: absolute;    
+}
+button{
+    
+}
+
