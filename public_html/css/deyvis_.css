@@ -28,7 +28,7 @@ header label:hover{
     cursor: pointer;
     background: rgba(0,0,0,0.3);
 }
-.menu ul,.menu1 ul{
+.menu ul{
     margin: 0;
     list-style: none;
     padding: 0;
@@ -36,13 +36,13 @@ header label:hover{
     flex-direction: row;
 /*    justify-content: center;*/
 }
-.menu li,.menu1 li{
+.menu li{
     border-right: 1px solid #fff;
 }
-.menu li,.menu1 li:hover{
+.menu li:hover{
     background: rgba(0,0,0,0.3);
 }
-.menu ul a,.menu1 ul li a{
+.menu ul a{
     display: block;
     padding: 15px 20px;
     color: #fff;
@@ -52,20 +52,20 @@ header label:hover{
     header label{
         display: block;
     }
-    .menu, .menu1{
+    .menu{
         position: absolute;
         background: #4e94ab;
         width: 70%;
         margin-left: -70%;
         transition: all 0.5s;
     }
-    .menu ul, .menu1 ul{
+    .menu ul{
         flex-direction: column;
     }
-    .menu li, .menu1 li{
+    .menu li{
         border-top: 1px solid #fff;
     }
-    #btn-menu:checked ~ .menu, .menu1{
+    #btn-menu:checked ~ .menu{
         margin: 0;
     }
 }
