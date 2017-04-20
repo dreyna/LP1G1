@@ -1,0 +1,42 @@
+nav
+{
+    margin: auto;
+    text-align: center;
+    width: 98%;
+    position: fixed;
+    z-index: 100;
+}
+nav ul 
+{
+    padding: 2%;
+    background: black;      
+}
+nav ul li
+{
+    display: inline-block;
+    width: 12%;
+}
+nav ul li a 
+{
+   
+    margin-top: 5px;
+    padding: 3%;
+    text-align: center;
+    background:blue ;
+    color: white;
+    border-radius: 3px;
+    display: block;
+  
+}
+nav ul li:hover a
+{
+    padding: 3%;
+    
+    background:  red;
+    color: yellow;
+   
+}
+
+
+
+
