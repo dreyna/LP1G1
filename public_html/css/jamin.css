@@ -3,9 +3,29 @@
 	padding:0px;
 	font-family: Helvetica Neue; 
 }
+body{
+    cursor: pointer;
+    background-image: url(../imagenes/fuerxa3.jpg);
 
+}
 /*titulo*/
+#video { 
 
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+
+                position: fixed;    
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%); 
+
+                z-index: -100;
+
+                background-size: cover;
+
+            }
 div#titulo{
 	width:100%;
 	margin-top:100px;
@@ -41,6 +61,7 @@ div.contenedor{
 }
 div#uno{
 	background-color: rgb(208,101,6);
+        cursor: progress;
 }div#dos{
 	background-color: rgb(233,147,29);
 }
@@ -86,7 +107,7 @@ p.texto{
 }
 div#uno:hover {    /*Al pasar el cursor por encima de la imagen, esta
                    aumenta su anchura y altura mediante una transición CSS.*/
-	height:200px;
+	height:2px;
 }
 
 div#dos:hover {
@@ -109,7 +130,7 @@ div.contenedor:hover p.texto{ /*el texto se ancha*/
 	opacity: 1;
 }
 div.contenedor:hover img.icon{
-	-webkit-box-shadow:0px 0px 0px 0px rgba(255,255,255,.500);
+	-webkit-box-shadow:0px 0px 0px 0px rgba(255,255,255,.50);
 }
 
 
