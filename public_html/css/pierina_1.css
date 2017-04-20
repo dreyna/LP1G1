@@ -36,7 +36,7 @@ transition: 0.5s ease-in-out;
 .perfil a:nth-child(1):hover ~ .JUEGO {
 left: 6.25%; 
 }
-.perfil a:nth-child(2):hover ~ .JUEGO
+.perfil a:nth-child(2):hover ~ .JUEGO{
 }
 
 .perfil a:nth-child(3):hover ~ .JUEGO {
