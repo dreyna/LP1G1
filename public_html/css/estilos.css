@@ -1,10 +1,6 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 19/04/2017, 07:17:42 PM
-    Author     : UPEU
-*/
-
+*{
+    margin: 0 auto;
+}
+body{
+    background-image: url("../imagenes/fondo2.jpeg")
+}
