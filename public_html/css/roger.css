@@ -1,0 +1,139 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19/04/2017, 08:20:57 PM
+    Author     : UPEU
+*/
+
+*{
+    margin:0 ; 
+
+}
+body{
+   background-image: url(http://cfile6.uf.tistory.com/image/257DF44E54DFA09A271F14);
+}
+#todo{
+    background-color:gold;
+    height: 1050px;
+    width: 780px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#p{
+    text-align: center;
+
+}
+
+#navegador ul{
+   list-style-type: none;
+   text-align: center;
+}
+#navegador li{
+   display: inline;
+   text-align: center;
+   margin: 0 10px 0 0;
+}
+#navegador li a {
+   padding: 2px 7px 2px 7px;
+   color: #666;
+   background-color: #eeeeee;
+   border: 1px solid #ccc;
+   text-decoration: none;
+}
+#navegador li a:hover{
+   background-color: #333333;
+   color: #ffffff;
+}
+
+
+.r li{
+	float: left;
+	margin: 5px;
+	position: relative;
+}
+.r li > a,
+.r li > a img{
+	display: block;
+}
+.r li > a{
+	width: 150px;
+	height: 150px;
+	position: relative;
+	padding: 10px;
+	background: yellow;
+	box-shadow: 1px 1px 2px blue, 1px 1px 2px rgba(158,111,86,0.3) inset;
+	border-radius: 4px 4px 4px 4px;
+}
+
+.r li > a span{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	top: 10px;
+	left: 10px;
+	text-align: center;
+	line-height: 150px;
+	color: yellowgreen;
+	font-size: 24px;
+	opacity: 0;
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+	transition: opacity 0.3s linear;
+}
+
+.r li>a:hover span{
+	opacity: 1;
+	
+ 
+}
+
+
+#lista {
+  min-width: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 30px 0;
+  position: relative;
+  text-align: center;
+  
+}
+
+
+#fx{
+    height: 150px;
+    width: 240px;
+}
+#lx{
+    height: 150px;
+    width: 240px;
+}
+#fx2{
+    height: 150px;
+    width: 240px;
+}
+#dr{
+     height: 150px;
+    width: 240px;
+}
+#iq{
+    height: 150px;
+    width: 240px;
+}
+#lista .imagenes li a:hover:before {
+  
+  position: absolute;
+  letter-spacing: 1px;
+  color: white;
+  line-height: 175px;
+  content: attr(data-subtitle);
+  width: 240px;
+  height: 150px;
+  background: fixed;
+  background: rgba(0, 0, 0, 0.5);
+}
+#contenedor{
+  border: 2px solid #000;
+  background: #F3F3F3;  
+}
