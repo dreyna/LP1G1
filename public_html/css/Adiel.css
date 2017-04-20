@@ -1,0 +1,56 @@
+body {
+    background:#99ff99;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:100%;
+    line-height:1em;
+    color:#ff0033
+}
+html {
+    min-width:1000px
+}
+#main {
+    margin:0 auto;
+    width:1000px;
+    font-size:.814em;
+}
+#slogan
+#slogan {width:739px;height:270px;background:url(../imagenes/Adiel.jpg) no-repeat left top;position:relative;}
+#slogan img {position:absolute;right:27px;top:15px}
+header {
+    height:208px;
+    position:relative
+}
+header.nav-box{
+    color: #f2f2f2;
+    font-size: 50px;
+    line-height: 200px;
+    float: left;
+}
+.current ul{
+    
+   background: #f2f2f2; 
+    display: flex;
+    list-style: none;   
+
+}
+.current ul ul{
+    display: none;    
+}
+.current a{
+    font-weight: bold;
+    display: block;
+    color:#9B98AA;
+    padding: 25px 30px;
+    text-decoration: none;    
+}
+.current a:hover{
+    color: rgba(0,250,0,0.5);
+    transition-duration: 0.3s;    
+}
+.current a span{
+    margin-left: 10px;
+}
+.currentul li:hover ul{
+    display: block;
+    position: absolute;    
+}
